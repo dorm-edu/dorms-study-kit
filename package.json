@@ -1,0 +1,22 @@
+{
+  "name": "dorms-study-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "도름스 스터디 기수 화면을 내 마음대로 꾸미는 시작 키트",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/check.mjs",
+    "check": "node scripts/check.mjs --src",
+    "pull": "node scripts/pull.mjs",
+    "submit": "node scripts/submit.mjs",
+    "selftest": "node scripts/selftest.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vite-plugin-singlefile": "2.0.3"
+  }
+}

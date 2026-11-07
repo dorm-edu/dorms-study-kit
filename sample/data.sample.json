@@ -1,0 +1,656 @@
+{
+  "version": 4,
+  "site": "https://dorms.school",
+  "study": {
+    "program": "견본 스터디",
+    "title": "1기",
+    "summary": "4주 동안 함께 배우고 끝까지 가는 견본 스터디예요.",
+    "status": "running",
+    "statusLabel": "진행 중",
+    "weeks": 4,
+    "startsOn": "2026-11-02",
+    "endsOn": "2026-11-29",
+    "href": "/learn/yeonsu/study/sample-01",
+    "leader": {
+      "name": "@견본리더",
+      "avatar": null,
+      "href": "/u/00000000-0000-4000-9000-000000000001"
+    },
+    "mentors": [
+      {
+        "name": "@견본멘토",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000002"
+      }
+    ],
+    "counts": {
+      "members": 6,
+      "completed": 2,
+      "apps": 2,
+      "feedbacks": 12
+    },
+    "story": {
+      "applied": 9,
+      "started": 6,
+      "completed": 2,
+      "rate": 33
+    },
+    "makesApps": true,
+    "kind": "vibe"
+  },
+  "sessions": [
+    {
+      "title": "1주차 라이브",
+      "startsAt": "2026-11-02T11:00:00.000Z",
+      "week": 1,
+      "host": {
+        "name": "@견본리더",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000001"
+      },
+      "attended": 5,
+      "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000001"
+    },
+    {
+      "title": "2주차 라이브",
+      "startsAt": "2026-11-09T11:00:00.000Z",
+      "week": 2,
+      "host": {
+        "name": "@견본리더",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000001"
+      },
+      "attended": null,
+      "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000002"
+    },
+    {
+      "title": "3주차 라이브",
+      "startsAt": "2026-11-16T11:00:00.000Z",
+      "week": 3,
+      "host": {
+        "name": "@견본리더",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000001"
+      },
+      "attended": null,
+      "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000003"
+    },
+    {
+      "title": "4주차 라이브",
+      "startsAt": "2026-11-23T11:00:00.000Z",
+      "week": 4,
+      "host": {
+        "name": "@견본리더",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000001"
+      },
+      "attended": null,
+      "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000004"
+    }
+  ],
+  "completers": [
+    {
+      "person": {
+        "name": "@완주선생님1",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000003"
+      },
+      "level": "처음 시작",
+      "goal": null,
+      "app": {
+        "name": "견본 앱 1",
+        "tagline": "수업에 바로 쓰는 견본 앱",
+        "image": null,
+        "href": "/apps/00000000-0000-4000-9200-000000000000"
+      },
+      "review": "견본 후기예요. 처음에는 막막했는데 매주 피드백을 받으며 끝까지 왔어요. 실제 화면에는 공개를 고른 후기가 들어가요.",
+      "reviewAt": "2026-11-28T00:00:00.000Z",
+      "completedAt": "2026-11-28T00:00:00.000Z",
+      "weeksPosted": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "feedbackGiven": 4,
+      "feedbackReceived": 3,
+      "storyHref": "/learn/yeonsu/study/sample-01/m/00000000-0000-4000-9000-000000000003"
+    },
+    {
+      "person": {
+        "name": "@완주선생님2",
+        "avatar": null,
+        "href": "/u/00000000-0000-4000-9000-000000000004"
+      },
+      "level": "처음 시작",
+      "goal": null,
+      "app": {
+        "name": "견본 앱 2",
+        "tagline": "수업에 바로 쓰는 견본 앱",
+        "image": null,
+        "href": "/apps/00000000-0000-4000-9200-000000000001"
+      },
+      "review": "견본 후기예요. 처음에는 막막했는데 매주 피드백을 받으며 끝까지 왔어요. 실제 화면에는 공개를 고른 후기가 들어가요.",
+      "reviewAt": "2026-11-28T00:00:00.000Z",
+      "completedAt": "2026-11-28T00:00:00.000Z",
+      "weeksPosted": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "feedbackGiven": 4,
+      "feedbackReceived": 3,
+      "storyHref": "/learn/yeonsu/study/sample-01/m/00000000-0000-4000-9000-000000000004"
+    }
+  ],
+  "guide": {
+    "text": "견본 안내 글이에요. 실제 화면에는 리더가 쓴 모집 · 안내 글이 들어가요.",
+    "images": []
+  },
+  "works": [],
+  "viewer": {
+    "tiers": [
+      "public",
+      "member",
+      "self",
+      "leader"
+    ],
+    "signedIn": true,
+    "me": {
+      "name": "@견본선생님1",
+      "avatar": null,
+      "href": "/u/00000000-0000-4000-8000-000000000001"
+    }
+  },
+  "tabs": {
+    "story": "소개",
+    "retro": "돌아보기",
+    "room": "피드백 방",
+    "homework": "숙제",
+    "makeup": "대체 과제"
+  },
+  "curriculum": {
+    "title": "견본 커리큘럼",
+    "rounds": [
+      {
+        "id": "00000000-0000-4000-9100-000000000001",
+        "round": 1,
+        "title": "1주차 라이브",
+        "startsAt": "2026-11-02T11:00:00.000Z",
+        "week": 1,
+        "state": "past",
+        "host": {
+          "name": "@견본리더",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-9000-000000000001"
+        },
+        "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000001"
+      },
+      {
+        "id": "00000000-0000-4000-9100-000000000002",
+        "round": 2,
+        "title": "2주차 라이브",
+        "startsAt": "2026-11-09T11:00:00.000Z",
+        "week": 2,
+        "state": "past",
+        "host": {
+          "name": "@견본리더",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-9000-000000000001"
+        },
+        "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000002"
+      },
+      {
+        "id": "00000000-0000-4000-9100-000000000003",
+        "round": 3,
+        "title": "3주차 라이브",
+        "startsAt": "2026-11-16T11:00:00.000Z",
+        "week": 3,
+        "state": "upcoming",
+        "host": {
+          "name": "@견본리더",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-9000-000000000001"
+        },
+        "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000003"
+      },
+      {
+        "id": "00000000-0000-4000-9100-000000000004",
+        "round": 4,
+        "title": "4주차 라이브",
+        "startsAt": "2026-11-23T11:00:00.000Z",
+        "week": 4,
+        "state": "upcoming",
+        "host": {
+          "name": "@견본리더",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-9000-000000000001"
+        },
+        "href": "/learn/yeonsu?id=00000000-0000-4000-9100-000000000004"
+      }
+    ]
+  },
+  "member": {
+    "roster": [
+      {
+        "person": {
+          "name": "@견본선생님1",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000001"
+        },
+        "status": "completed",
+        "weeksPosted": [
+          1
+        ],
+        "attend": 0,
+        "makeup": 0,
+        "homework": {
+          "done": 0,
+          "total": 2
+        },
+        "completedAt": "2026-11-29"
+      },
+      {
+        "person": {
+          "name": "@견본선생님2",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000002"
+        },
+        "status": "member",
+        "weeksPosted": [
+          1,
+          2
+        ],
+        "attend": 1,
+        "makeup": 1,
+        "homework": {
+          "done": 1,
+          "total": 2
+        },
+        "completedAt": null
+      },
+      {
+        "person": {
+          "name": "@견본선생님3",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000003"
+        },
+        "status": "member",
+        "weeksPosted": [
+          1,
+          2
+        ],
+        "attend": 2,
+        "makeup": 0,
+        "homework": {
+          "done": 2,
+          "total": 2
+        },
+        "completedAt": null
+      },
+      {
+        "person": {
+          "name": "@견본선생님4",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000004"
+        },
+        "status": "completed",
+        "weeksPosted": [
+          1
+        ],
+        "attend": 3,
+        "makeup": 1,
+        "homework": {
+          "done": 0,
+          "total": 2
+        },
+        "completedAt": "2026-11-29"
+      },
+      {
+        "person": {
+          "name": "@견본선생님5",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000005"
+        },
+        "status": "member",
+        "weeksPosted": [
+          1,
+          2
+        ],
+        "attend": 0,
+        "makeup": 0,
+        "homework": {
+          "done": 1,
+          "total": 2
+        },
+        "completedAt": null
+      },
+      {
+        "person": {
+          "name": "@견본선생님6",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000006"
+        },
+        "status": "member",
+        "weeksPosted": [
+          1,
+          2
+        ],
+        "attend": 1,
+        "makeup": 1,
+        "homework": {
+          "done": 2,
+          "total": 2
+        },
+        "completedAt": null
+      }
+    ],
+    "homeworks": [
+      {
+        "id": "00000000-0000-4000-a000-000000000001",
+        "title": "견본 숙제 1",
+        "kind": "app",
+        "dueAt": null,
+        "required": true,
+        "guide": "숙제 안내 글이 여기에 들어가요."
+      },
+      {
+        "id": "00000000-0000-4000-a000-000000000002",
+        "title": "견본 숙제 2",
+        "kind": "write",
+        "dueAt": null,
+        "required": false,
+        "guide": "숙제 안내 글이 여기에 들어가요."
+      }
+    ],
+    "makeups": [
+      {
+        "taskId": "00000000-0000-4000-b000-000000000001",
+        "sessionId": "00000000-0000-4000-c000-000000000001",
+        "sessionTitle": "견본 회차 1",
+        "startsAt": "2026-11-02T10:00:00.000Z",
+        "dueAt": null,
+        "guide": "대체 과제 안내 글이 여기에 들어가요."
+      }
+    ],
+    "works": [
+      {
+        "kind": "homework",
+        "refId": "00000000-0000-4000-a000-000000000001",
+        "title": "견본 숙제 1",
+        "person": {
+          "name": "@견본선생님1",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000001"
+        },
+        "text": "승인된 숙제 글 견본이에요. 실제 화면에서는 선생님들이 낸 글이 들어가요.",
+        "images": [],
+        "app": null
+      },
+      {
+        "kind": "homework",
+        "refId": "00000000-0000-4000-a000-000000000001",
+        "title": "견본 숙제 1",
+        "person": {
+          "name": "@견본선생님2",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000002"
+        },
+        "text": "승인된 숙제 글 견본이에요. 실제 화면에서는 선생님들이 낸 글이 들어가요.",
+        "images": [],
+        "app": null
+      },
+      {
+        "kind": "homework",
+        "refId": "00000000-0000-4000-a000-000000000001",
+        "title": "견본 숙제 1",
+        "person": {
+          "name": "@견본선생님3",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000003"
+        },
+        "text": "승인된 숙제 글 견본이에요. 실제 화면에서는 선생님들이 낸 글이 들어가요.",
+        "images": [],
+        "app": null
+      }
+    ],
+    "room": [
+      {
+        "id": "00000000-0000-4000-d000-000000000001",
+        "week": 1,
+        "person": {
+          "name": "@견본선생님1",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000001"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님2",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000002"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000002",
+        "week": 2,
+        "person": {
+          "name": "@견본선생님2",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000002"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님3",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000003"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000003",
+        "week": 3,
+        "person": {
+          "name": "@견본선생님3",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000003"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님4",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000004"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000004",
+        "week": 4,
+        "person": {
+          "name": "@견본선생님4",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000004"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님5",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000005"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000005",
+        "week": 1,
+        "person": {
+          "name": "@견본선생님5",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000005"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님6",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000006"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000006",
+        "week": 2,
+        "person": {
+          "name": "@견본선생님6",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000006"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님1",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000001"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000007",
+        "week": 3,
+        "person": {
+          "name": "@견본선생님1",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000001"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님2",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000002"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-d000-000000000008",
+        "week": 4,
+        "person": {
+          "name": "@견본선생님2",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000002"
+        },
+        "note": "이번 주에 한 일 견본이에요.",
+        "link": null,
+        "updatedAt": "2026-01-01T10:00:00.000Z",
+        "feedbacks": [
+          {
+            "person": {
+              "name": "@견본선생님3",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000003"
+            },
+            "text": "피드백 견본이에요.",
+            "createdAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  "self": {
+    "person": {
+      "name": "@견본선생님1",
+      "avatar": null,
+      "href": "/u/00000000-0000-4000-8000-000000000001"
+    },
+    "status": "member",
+    "attend": 1,
+    "weeksPosted": [
+      1
+    ],
+    "homework": [
+      {
+        "homeworkId": "00000000-0000-4000-a000-000000000001",
+        "status": "pending"
+      }
+    ],
+    "makeup": []
+  },
+  "leader": {
+    "applicants": [
+      {
+        "person": {
+          "name": "@견본선생님101",
+          "avatar": null,
+          "href": "/u/00000000-0000-4000-8000-000000000101"
+        },
+        "appliedAt": "2026-01-01T09:00:00.000Z"
+      }
+    ],
+    "survey": {
+      "columns": [
+        {
+          "id": "q1",
+          "title": "견본 질문"
+        }
+      ],
+      "rows": [
+        {
+          "person": {
+            "name": "@견본선생님101",
+            "avatar": null,
+            "href": "/u/00000000-0000-4000-8000-000000000101"
+          },
+          "answers": {
+            "q1": "설문 답 견본이에요."
+          }
+        }
+      ]
+    }
+  }
+}
