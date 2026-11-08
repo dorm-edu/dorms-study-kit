@@ -90,3 +90,15 @@ p { margin: 0 0 8px; }
   .kit-round { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) { #kit-dev-notice { transition: none; } }
+
+/* 보드(데이터 판 5): 칸마다 카드 격자. 카드 색은 면 색으로만(가장자리 색 띠 없이). */
+.kit-board { display: grid; gap: 10px; }
+.kit-board + .kit-board { margin-top: 18px; }
+.kit-board-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; align-items: start; }
+.kit-board-card { display: grid; gap: 8px; padding: 14px; border: 1px solid var(--line); border-radius: 12px; min-width: 0; background: var(--snow); }
+.kit-board-card[data-color="yellow"] { background: #fbf0c8; }
+.kit-board-card[data-color="blue"] { background: #e3ecf8; }
+.kit-board-card[data-color="green"] { background: #e3f0e1; }
+.kit-board-card[data-color="pink"] { background: #f7e3e8; }
+.kit-board-img { width: 100%; height: auto; border-radius: 8px; }
+.kit-board-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px; }

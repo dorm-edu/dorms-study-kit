@@ -30,6 +30,12 @@ export function asViewer(full: StudyData, who: DevViewer): StudyData {
     member: tiers.includes("member") ? full.member : null,
     self: tiers.includes("self") ? full.self : null,
     leader: tiers.includes("leader") ? full.leader : null,
+    // 손님은 공개 칸만, 쓰기 · 고치기 표시 없이.
+    boards: who === "guest"
+      ? { canManage: false, canModerate: false, list: (full.boards?.list ?? []).filter((b) => b.open).map((b) => ({ ...b, canWrite: false, cards: b.cards.filter((c) => !c.hidden).map((c) => ({ ...c, mine: false, canEdit: false })) })) }
+      : who === "member"
+        ? { canManage: false, canModerate: false, list: (full.boards?.list ?? []).map((b) => ({ ...b, canWrite: b.writers === "members", cards: b.cards.filter((c) => !c.hidden || c.mine).map((c) => ({ ...c, canEdit: c.mine })) })) }
+        : full.boards ?? { canManage: false, canModerate: false, list: [] },
   };
 }
 
@@ -51,6 +57,7 @@ export function action(a: Action): void {
 
 export const ACTION_LABEL: Record<Action["name"], string> = {
   apply: "스터디 신청", "homework.submit": "숙제 내기", "makeup.submit": "대체 과제 내기", "room.write": "주차 기록 쓰기", "room.feedback": "피드백 쓰기", "session.enter": "연수 입장",
+  "board.write": "보드 카드 쓰기", "board.edit": "보드 카드 고치기",
 };
 
 /** 내 컴퓨터에서만: 도름스 주소(/u/..)를 누르면 도름스 사이트를 새 창으로 연다. 도름스 안에서는 도름스가 처리한다. */

@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "site": "https://dorms.school",
   "study": {
     "program": "견본 스터디",
@@ -652,5 +652,63 @@
         }
       ]
     }
+  },
+  "boards": {
+    "canManage": true,
+    "list": [
+      {
+        "id": "00000000-0000-4000-e000-000000000001",
+        "name": "시작하기",
+        "writers": "leaders",
+        "open": true,
+        "canWrite": true,
+        "cards": [
+          {
+            "id": "00000000-0000-4000-e100-000000000001",
+            "title": "스터디는 이렇게 진행해요",
+            "text": "매주 화요일 밤 9시에 모여요. 리더가 쓴 공지 카드 견본이에요.",
+            "images": [],
+            "color": "yellow",
+            "person": {
+              "name": "@견본선생님1",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000001"
+            },
+            "pinned": true,
+            "hidden": false,
+            "mine": true,
+            "canEdit": true,
+            "updatedAt": "2026-01-01T10:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-e000-000000000002",
+        "name": "자료실",
+        "writers": "members",
+        "open": false,
+        "canWrite": true,
+        "cards": [
+          {
+            "id": "00000000-0000-4000-e100-000000000002",
+            "title": "도움이 된 영상",
+            "text": "스터디원이 올린 카드 견본이에요.",
+            "images": [],
+            "color": "blue",
+            "person": {
+              "name": "@견본선생님2",
+              "avatar": null,
+              "href": "/u/00000000-0000-4000-8000-000000000002"
+            },
+            "pinned": false,
+            "hidden": false,
+            "mine": false,
+            "canEdit": false,
+            "updatedAt": "2026-01-01T11:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "canModerate": true
   }
 }

@@ -48,6 +48,17 @@ export type StudyData = {
     homework: { homeworkId: string; status: ReviewStatus }[];
     makeup: { taskId: string; status: ReviewStatus }[];
   };
+  /**
+   * 스터디 보드(데이터 판 5): 리더가 도름스 기수 화면 '보드' 탭에서 만든 칸(시작하기 · 프롬프트 모음 · 자료실 같은 것)과 카드.
+   * 공개 칸(open)은 손님에게도, 나머지는 스터디원 · 리더 · 멘토에게만 실린다. canWrite · canEdit 은 로그인한 사람 화면에서만 참이 된다.
+   */
+  boards: {
+    canManage: boolean;
+    /** 리더 · 멘토: 남이 쓴 카드도 고정 · 숨기기(board.edit 창). */
+    canModerate: boolean;
+    list: { id: string; name: string; writers: "leaders" | "members"; open: boolean; canWrite: boolean;
+      cards: { id: string; title: string; text: string; images: string[]; color: string; person: Person | null; pinned: boolean; hidden: boolean; mine: boolean; canEdit: boolean; updatedAt: string }[] }[];
+  };
   leader: null | {
     applicants: { person: Person; appliedAt: string }[];
     survey: { columns: { id: string; title: string }[]; rows: { person: Person; answers: Record<string, string | string[]> }[] } | null;
@@ -61,4 +72,6 @@ export type Action =
   | { name: "makeup.submit"; taskId: string }
   | { name: "room.write"; week: number }
   | { name: "room.feedback"; postId: string }
-  | { name: "session.enter"; sessionId: string };
+  | { name: "session.enter"; sessionId: string }
+  | { name: "board.write"; boardId: string }
+  | { name: "board.edit"; cardId: string };

@@ -132,6 +132,30 @@ export function room(d: StudyData): HTMLElement {
   );
 }
 
+/**
+ * 보드(퀴즈앤 · 패들렛처럼): 칸마다 카드. 칸 · 카드는 리더 · 멘토 · 스터디원이 도름스 창에서 쓰고 고친다.
+ * 칸을 만들고 누가 쓸지 고르는 일은 리더가 도름스 기수 화면 '보드' 탭에서 한다.
+ */
+export function boards(d: StudyData, boardId?: string): HTMLElement {
+  const list = d.boards?.list ?? [];
+  if (!list.length) return h("section", { class: "kit-card" }, h("h2", null, icon("chat"), "보드"), empty(d.boards?.canManage ? "아직 보드 칸이 없어요. 도름스 기수 화면의 '보드' 탭에서 칸을 만들어 주세요." : "아직 보드 칸이 없어요."));
+  const shown = boardId ? list.filter((b) => b.id === boardId) : list;
+  return h("section", { class: "kit-card" },
+    ...shown.map((b) => h("div", { class: "kit-board" },
+      h("div", { class: "kit-week-head" }, h("b", null, b.name), b.canWrite ? h("button", { type: "button", class: "kit-btn", onclick: () => action({ name: "board.write", boardId: b.id }) }, "카드 쓰기") : null),
+      b.cards.length ? h("div", { class: "kit-board-grid" }, ...b.cards.map((c) => h("article", { class: "kit-board-card", "data-color": c.color },
+        c.pinned ? h("span", { class: "kit-meta" }, "고정") : null,
+        c.hidden ? h("span", { class: "kit-meta" }, "숨김(리더 · 멘토와 쓴 사람만 봐요)") : null,
+        c.title ? h("b", null, c.title) : null,
+        c.text ? longText(c.text) : null,
+        ...c.images.slice(0, 2).map((src) => h("img", { src, alt: "", loading: "lazy", class: "kit-board-img" })),
+        h("div", { class: "kit-board-foot" }, c.person ? personLink(c.person) : h("span", { class: "kit-meta" }, "떠난 선생님"),
+          c.canEdit || d.boards.canModerate ? h("button", { type: "button", class: "kit-btn kit-btn--quiet", onclick: () => action({ name: "board.edit", cardId: c.id }) }, c.canEdit ? "고치기" : "고정 · 숨기기") : null),
+      ))) : empty(`아직 「${b.name}」 칸에 카드가 없어요.`),
+    )),
+  );
+}
+
 /** 돌아보기(결과 공유): 완주한 선생님 · 앱 · 공개 후기 · 함께 해낸 숙제. 공개 값이라 손님도 본다. */
 export function retro(d: StudyData): HTMLElement {
   const works = d.member ? d.member.works : d.works.flatMap((w) => w.items.map((it) => ({ title: w.title, ...it })));

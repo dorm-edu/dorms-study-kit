@@ -5,7 +5,7 @@
 import "./style.css";
 import { asViewer, devLinks, inDorms, loadData, type DevViewer } from "./kit/dorms";
 import type { StudyData } from "./kit/types";
-import { curriculum, guide, header, homework, leaderPanel, makeup, retro, room, roster } from "./kit/parts";
+import { boards, curriculum, guide, header, homework, leaderPanel, makeup, retro, room, roster } from "./kit/parts";
 import { h } from "./kit/ui";
 
 type Route = { key: string; label: string; render: (d: StudyData) => (HTMLElement | null)[]; show: (d: StudyData) => boolean };
@@ -16,6 +16,7 @@ const routes: Route[] = [
   { key: "homework", label: "", render: (d) => [homework(d)], show: (d) => !!d.member },
   { key: "makeup", label: "", render: (d) => [makeup(d)], show: (d) => !!d.member && d.member.makeups.length > 0 },
   { key: "room", label: "", render: (d) => [room(d)], show: (d) => !!d.member },
+  { key: "boards", label: "보드", render: (d) => [boards(d)], show: (d) => (d.boards?.list.length ?? 0) > 0 || !!d.boards?.canManage },
   { key: "retro", label: "", render: (d) => [retro(d)], show: () => true },
 ];
 const labelOf = (r: Route, d: StudyData) => r.label || ({ intro: d.tabs.story, homework: d.tabs.homework, makeup: d.tabs.makeup, room: d.tabs.room, retro: d.tabs.retro } as Record<string, string>)[r.key] || r.key;

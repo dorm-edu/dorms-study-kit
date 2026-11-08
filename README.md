@@ -11,7 +11,7 @@ AI 가 이 키트를 받아 도름스에 연결하고, 견본 데이터로 만�
 ## 직접 해 볼 때
 
 ```bash
-git clone --branch v0.1.0 https://github.com/dorm-edu/dorms-study-kit my-study
+git clone --branch v0.2.0 https://github.com/dorm-edu/dorms-study-kit my-study
 cd my-study
 npm install
 npm run dev          # 견본 데이터로 띄워요. 아래 '보는 사람' 단추로 손님 · 스터디원 · 리더 화면을 바꿔 봐요.
@@ -37,6 +37,7 @@ AI 없이 만들었다면 도름스 꾸미기 탭의 **HTML 올리기** 로 `dis
 | `member` | 이 기수 스터디원 · 리더 · 멘토 | 함께하는 선생님과 진도 · 숙제와 대체 과제 목록 · 인정된 숙제 글 · 피드백 방 |
 | `self` | 로그인한 사람 | 내 신청 상태 · 출석 · 숙제와 대체 과제 상태 |
 | `leader` | 리더 | 확정 전 신청자 · 신청 설문 답 |
+| `boards` | 공개 칸은 누구나, 나머지 칸은 스터디원 · 리더 · 멘토 | 리더가 도름스 '보드' 탭에서 만든 칸(시작하기 · 프롬프트 모음 · 자료실 같은 것)과 카드 |
 
 받지 못한 칸은 `null` 이에요. 손님에게 보일 화면도 꼭 만들어 주세요.
 `npm run pull` 로 받는 견본은 공개 값만 실제이고, 나머지 칸은 같은 모양의 가짜예요. 선생님들이 쓴 글은 도름스 안에서만 들어가요.
@@ -50,7 +51,13 @@ import { action } from "./kit/dorms";
 action({ name: "homework.submit", homeworkId: hw.id });
 ```
 
-부를 수 있는 것: `apply`(신청) · `homework.submit` · `makeup.submit` · `room.write`(주차 기록) · `room.feedback` · `session.enter`(연수 입장).
+부를 수 있는 것: `apply`(신청) · `homework.submit` · `makeup.submit` · `room.write`(주차 기록) · `room.feedback` · `session.enter`(연수 입장) · `board.write`(보드 칸에 카드 쓰기, `boardId`) · `board.edit`(카드 고치기, `cardId`).
+
+## 보드: 글을 HTML 에 박지 말고 도름스에 두기
+
+리더 · 멘토 · 스터디원이 글을 올리고 고치는 칸은 HTML 에 글을 적어 두지 말고 `data.boards` 로 그려요.
+칸은 리더가 도름스 기수 화면의 '보드' 탭에서 만들고, 칸마다 누가 쓸지(리더 · 멘토만 / 스터디원도)를 골라요.
+화면은 칸의 `canWrite` 가 참이면 '카드 쓰기'(`board.write`) 단추를, 카드의 `canEdit` 가 참이면 '고치기'(`board.edit`) 단추를 달면 돼요. 예시는 `src/kit/parts.ts` 의 `boards()`.
 
 ## 지킬 것
 
